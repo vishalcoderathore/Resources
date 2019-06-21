@@ -53,3 +53,8 @@ Step 6 : Build Docker Custom Image              -> docker build -t static-app:v1
 Step 7 : Run docker container with custom image -> docker run -d --name app-container -p 80:80 static-app:v1
 Optional : After Step 7 you can push your image to the Docker Hub
 ```
+
+## Resource 4 : Git Cheat Sheet
+
+Access Link : [View Document](https://github.com/vishalcoderathore/Resources/blob/master/git-cheat-sheet.md)
+
