@@ -58,3 +58,5 @@ Optional : After Step 7 you can push your image to the Docker Hub
 
 Access Link : [View Document](https://github.com/vishalcoderathore/Resources/blob/master/git-cheat-sheet.md)
 
+## Resource 5 : URL Validator
+Acces Link : [View Document](https://github.com/vishalcoderathore/Resources/blob/master/URLValidaror.js)
