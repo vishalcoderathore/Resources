@@ -1,6 +1,6 @@
 # Resource Files
 
-## Resource 1 : Install Latest Docker CE and Docker Compose v.1.22.0
+## Resource 1 : Install Docker Engine v20.10.8 and Docker Compose v.1.29.2
 
 ### Docker on Linux Overview
 * Easiest install/setup, best native experience
