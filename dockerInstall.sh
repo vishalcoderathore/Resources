@@ -35,5 +35,5 @@ sudo chmod +x /usr/local/bin/docker-compose
 echo " "
 echo "****************************************************************************"
 echo "Docker Machine installed!"
-echo "Docker Compos  installed!"
+echo "Docker Compose installed!"
 echo "****************************************************************************"
