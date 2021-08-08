@@ -2,6 +2,60 @@
 
 ## Resource 1 : Install Latest Docker CE and Docker Compose v.1.22.0
 
+### Docker on Linux Overview
+* Easiest install/setup, best native experience
+* Three main ways to install: script, store, or ```docker-machine```
+* get.docker.com script (Latest Edge Release)
+	* ```curl -sSL https://get.docker.com/ | sh```
+* store.docker.com has instructions for each distro
+* RHEL officially only supports Docker EE (paid), but CentOS will work
+* Installing in a VM, Cloud Instance, all are the same process
+* May not work for unlisted distros (Amazon Linux, Linode Linux, etc.)
+
+### Install Docker engine
+* Navigate to ```https://get.docker.com/``` to view the script
+* This script is meant for quick & easy install via:
+	* ```curl -fsSL https://get.docker.com -o get-docker.sh```
+	* ```sh get-docker.sh```
+* Add user to docker group to use docker without sudo -> ```sudo usermod -aG docker <useraccount>```
+* Log out and log back in in order for that change to take effect
+* Check Docker version
+```
+╰─➤  docker version
+Client: Docker Engine - Community
+ Version:           20.10.8
+ API version:       1.41
+ Go version:        go1.16.6
+ Git commit:        3967b7d
+ Built:             Fri Jul 30 19:54:22 2021
+ OS/Arch:           linux/amd64
+ Context:           default
+ Experimental:      true
+
+Server: Docker Engine - Community
+ Engine:
+  Version:          20.10.8
+  API version:      1.41 (minimum version 1.12)
+  Go version:       go1.16.6
+  Git commit:       75249d8
+  Built:            Fri Jul 30 19:52:31 2021
+  OS/Arch:          linux/amd64
+  Experimental:     false
+ containerd:
+  Version:          1.4.9
+  GitCommit:        e25210fe30a0a703442421b0f60afac609f950a3
+ runc:
+  Version:          1.0.1
+  GitCommit:        v1.0.1-0-g4144b63
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        de40ad0
+
+```
+
+### Install Docker Machine and Compose
+* Script installs Docker Machine v0.16.2 and Docker Compose v1.29.2
+* To install the latest version checkout the version form the release pages on github repo and replace the version number in the script
 ```
 $ wget -O dockerInstall.sh https://raw.githubusercontent.com/vishalcoderathore/Resources/master/dockerInstall.sh
 $ sudo chmod 777 dockerInstall.sh
